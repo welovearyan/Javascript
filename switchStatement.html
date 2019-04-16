@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Switch Statement</title>
+</head>
+<body>
+  <h1>Switch</h1>
+  <p id="day"></p>
+  <button id="btn">start</start>
+<script >
+var day = "";
+switch (new Date().getDay()){
+    
+  case 0:
+    
+    day = "sunday";
+    
+    break;
+    
+  case 1:
+    
+    day = "monday";
+    
+    break;
+    
+  case 2:
+    
+    day = "tuesday";
+    
+    break;
+  
+  default: day = "error";
+    
+}
+
+document.getElementById('btn').addEventListener('click',function(){
+  document.getElementById('day').innerHTML = day;
+})
+</script>
+</body>
+</html>
